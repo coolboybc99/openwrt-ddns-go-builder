@@ -46,7 +46,7 @@ jobs:
         make package/luci-app-ddns-go/compile -j$(nproc) V=s
 
     - name: Upload .ipk
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v2
       with:
         name: ddns-go-ipk
         path: |
